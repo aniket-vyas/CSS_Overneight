@@ -1,0 +1,43 @@
+
+/* This is external CSS which is linked with "CSS_basic-1.html" file*/
+
+p{      /* --> Element / type / tag selector */
+    color: lightyellow;
+    background-color: yellowgreen;
+    font-size: larger;
+}
+.para{      /* --> Class selector */
+    color: blue;
+    background-color: aqua;
+    font-size: smaller;
+}
+.head{      /* --> Class selector */
+    color: blueviolet;
+    font-size: small;
+}
+#para_1{    /* --> ID selector */
+    color: black;
+}
+button:hover{       /* move mouse to the button and color will change */
+    background-color: yellow;
+}
+text{
+    text-shadow: 2px 2px 2px lightcoral;
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px; /* gap in b/w the boxes of A , B , C*/
+    padding: 10px; /* gap in b/w the content inside box and border of box*/
+}
+#org{
+    background-color: orange;
+}
+#whi{
+    background-color: white;
+}
+#gre{
+    background-color: green;
+}
