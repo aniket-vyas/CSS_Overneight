@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic-1</title>
+    <!--
+        CSS :- Cascading Style Sheets
+        ~> CSS is the language we use to style an HTML document.
+        ~> CSS describes how HTML elements should be displayed.
+
+        Selector :- it is way of using which we can selecct the elements
+            Types 
+            1.) Simple Selector
+                -> Element Selector (type selector / tag selector)
+                -> Class Selector
+                -> ID Selector
+            2.) Pseudo-class Selector
+            3.) Multiple Selector
+    -->
+    <style>
+       /*
+            empty
+       */
+    </style>
+     <!-- 
+        how to link our external css file with this html file : 
+     -->
+    <link rel="stylesheet" href="external.css">
+    <!--
+        rel -> relationship with stylesheet
+    -->
+
+</head>
+<body>
+    <p id="para_1"> This is my first paragraph. </p> <!--id must be unique-->
+    <h1 class="head"> This is my h1 heading. </h1> <!--class name can be same-->
+    <p class="para"> This is my second paragraph. </p>
+    <h2> This is my h2 heading. </h2>
+    <p class="para"> This is my paragraph. </p>
+    <h2 class="head"> This is my h2 heading. </h2>
+
+    <!--type "lorem10" & it will give you random words-->
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, pariatur.</p>
+
+    <button id="button">Submit</button>
+    <text> ----- move mouse to the button and color will change</text>
+
+    <!-- inline CSS -->
+    <p style="font-style: italic; color: black; background-color: white;"> Hello everyone !!</p> 
+
+    <!-- internal CSS -->
+    <text> Use for internal css </text>
+
+    <br><br>
+
+    <div class="box" id="org"> A </div>
+    <div class="box" id="whi"> Margin </div>
+    <div class="box" id="gre"> Padding </div>
+
+    <!--
+        01:20:28 / 01:59:59
+    -->
+</body>
+</html>
