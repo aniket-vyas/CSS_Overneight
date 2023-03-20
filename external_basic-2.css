@@ -1,0 +1,113 @@
+/*
+    CSS gradients :-
+        ~> smooth transition b/w 2 or more colors
+        ~> 3 types of gradients are
+            1.) Linear Gradients (goes up/down/left/right/diagonally)
+            2.) Radial Gradients (define by their centre)
+            3.) Conic Gradients (rotated around a center point)
+*/
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(yellow , green , pink);
+    /*
+    background-image: linear-gradient(to left yellow , green); --> left
+    background-image: linear-gradient(to right yellow , green); --> right
+    background-image: linear-gradient(to bottom yellow , green); --> bottom
+    background-image: linear-gradient(to bottom right yellow , green); --> bottom right
+    background-image: linear-gradient(60deg , yellow , green); --> 60deg
+    */
+}
+.mydiv{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-image: radial-gradient( red 20% , yellow 10%, green );
+}
+.conic{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(orange , white , green) ;
+}
+/*
+    CSS Shadow effect
+    ~> 2 types are :
+        1.) Text-shadow
+        2.) Box-shadow
+*/
+h1{
+    text-shadow: 3px 3px 3px lightseagreen;
+}
+h2{
+    text-shadow: 3px 3px 3px lightseagreen , 5px 5px 5px red;
+}
+.id{
+    text-shadow: 3px 3px 3px lightseagreen , 50px 50px 5px red;
+}
+.div1{
+    border: 1px solid black;
+    color: blue;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 5px lightgreen , 10px 10px 2px darkblue;
+    overflow: scroll;
+}
+/*
+    CSS - 2D transforms
+    ~> it allow you to move , rotate , scale , and skew elements
+    ~> with transform property you can use following methods
+        * translate()
+        * rotate()
+        * scaleX() --> for zoom the text
+        * scaleY()
+        * scale()
+        * skewX()
+        * skewY()
+        * skew()
+        * matrix()
+*/
+.trans{
+    background-color: lightsalmon;
+    transform: translate(200px , 100px);
+}
+.rot{
+    background-color: lightgreen;
+    transform: rotate(45deg);
+    height: 100px;
+    width: 400px;
+}
+.sca{
+    margin: 200px;
+    background-color: lightskyblue;
+    transform: scale(2,3);
+}
+.skew{
+    background-color: lightpink;
+    transform: skew(-40deg);
+}
+/* 
+    CSS Position Proterty :-
+    ~> it specifies the types of positioning method use for an element
+        1.) Static --> same sequence will show as we write no change
+        2.) Relative
+        3.) Fixed
+        4.) Absolute
+        5.) Sticky
+*/
+.box_{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: lawngreen;
+    border: 1px solid black;
+}
+#box3{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+#box3{
+    position: fixed;
+}
